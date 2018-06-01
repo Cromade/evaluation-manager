@@ -12,6 +12,12 @@ html, body
 	src: url("./font/CorporationGames.otf");
 }
 
+.row
+{
+	margin-right:0;
+	margin-left:0;
+}
+
 .error
 {
 	color: red;	
@@ -84,6 +90,7 @@ a:hover
 
 .content-div
 {
+	padding-top: 15px;
 	background-color: white;
 	box-shadow: 1px 1px 12px #555;
 	text-align: center;
@@ -154,7 +161,7 @@ a:hover
 .shadow-boxing
 {
 	background-color: white;
-	padding: 15px;
+    padding: 10px;
 	box-shadow: 1px 1px 12px #555;
 }
 

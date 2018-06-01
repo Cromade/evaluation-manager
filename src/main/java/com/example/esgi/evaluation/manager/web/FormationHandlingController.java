@@ -4,12 +4,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-
 @Controller
-public class IndexController {
+public class FormationHandlingController {
 
-	@RequestMapping(path="/")
+	@RequestMapping(path="/formation-handling")
 	public String defaultHandler(ModelMap model) {
-		return "redirect:/student-handling";
+		return "formationHandling";
 	}
 }
