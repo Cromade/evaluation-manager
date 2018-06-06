@@ -31,21 +31,21 @@
 	    
 	    <div class="container-fluid">
 			<div class="row">
-			   	<div class="col-lg-2"></div>
+			   	<div class="col-lg-3"></div>
 					    
-				<div class="col-lg-8 content-div">
+				<div class="col-lg-6 content-div">
 					<h1>Gestion des étudiants</h1>
 					<hr>
 					<div class="shadow-boxing">
-						<form class="row add-comment" th:method="post" th:action="@{/student-handling/create-student}">
+						<form class="row add-comment" th:method="post" action="#">
 							<div class="col-lg-3 col-md-3 col-sm-3" style="padding-left: 5px; padding-right: 5px;">
-								<input class="form-control" type="text" name="firstname" placeholder="Nom..." aria-label="Search">
+								<input class="form-control" type="search" name="firstname" placeholder="Nom..." aria-label="Search">
 							</div>
 							<div class="col-lg-3 col-md-3 col-sm-3" style="padding-left: 5px; padding-right: 5px;">
-								<input class="form-control" type="text" name="lastname" placeholder="Prénom..." aria-label="Search">
+								<input class="form-control" type="search" name="lastname" placeholder="Prénom..." aria-label="Search">
 							</div>
 							<div class="col-lg-3 col-md-3 col-sm-3" style="padding-left: 5px; padding-right: 5px;">
-								<input type='date' class="form-control" name="birthday" />
+								<input type='text' class="form-control" id='datetimepicker' />
 							</div>
 							<div class="col-lg-3 col-md-3 col-sm-3" style="padding-left: 5px; padding-right: 5px;">
 								<button class="btn btn-success" type="submit" style="width:100%;">Créer</button>
@@ -64,11 +64,25 @@
 							</tr>
 						</thead>
 						<tbody>
-						    <tr th:each="s : ${student}">
-							    <th th:text="${s.id}">1</th>
-							    <td th:text="${s.firstname}"></td>
-							    <td th:text="${s.lastname}"></td>
-							    <td th:text="${s.birthday}"></td>
+						    <tr>
+							    <th scope="row">1</th>
+							    <td>Mark</td>
+							    <td>Otto</td>
+							    <td>25/03/1995</td>
+							    <td><a href="">Détail</a> <a href="">Modification</a> <a href="">Suppression</a></td>
+							</tr>
+							<tr>
+							    <th scope="row">2</th>
+							    <td>Jacob</td>
+							    <td>Thornton</td>
+							    <td>25/03/1995</td>
+							    <td><a href="">Détail</a> <a href="">Modification</a> <a href="">Suppression</a></td>
+							</tr>
+							<tr>
+								<th scope="row">3</th>
+							    <td>Larry</td>
+							    <td>the Bird</td>
+							    <td>25/03/1995</td>
 							    <td><a href="">Détail</a> <a href="">Modification</a> <a href="">Suppression</a></td>
 							</tr>
 						</tbody>
@@ -76,13 +90,15 @@
 				</div>
 				    
 					    
-			    <div class="col-lg-2"></div>
+			    <div class="col-lg-3"></div>
 			</div>
 		</div>
     </body>
     <script type="text/javascript" th:inline="javascript">/*<![CDATA[*/
     defer(function() {
-	    
+    	$('#datetimepicker').datepicker({
+    		format: 'mm/dd/yyyy'
+    	});
     });
     /*]]>*/
 	</script>

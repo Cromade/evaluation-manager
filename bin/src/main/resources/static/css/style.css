@@ -1,0 +1,330 @@
+html, body
+{
+	margin: 0px;
+    padding-top: 30px;
+    outline: 0px;
+	height: 100%;
+}
+
+@font-face
+{
+	font-family: title-font;
+	src: url("./font/CorporationGames.otf");
+}
+
+.row
+{
+	margin-right:0;
+	margin-left:0;
+}
+
+.error
+{
+	color: red;	
+}
+
+.info
+{
+	color: rgb(76,175,80);
+}
+
+.login-page
+{
+    background: url("./image/grid1.jpg") fixed;
+    background-size: cover;
+}
+
+.login-page h1
+{
+	color: white;
+}
+
+.login-div
+{
+	color: white;
+	border-radius: 25px;
+	background-color: rgba(51, 51, 51, 0.95);
+	margin-top: 10%;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	text-align: center;
+}
+
+.login-div hr
+{
+	border-color: white;
+}
+
+a
+{
+	color: rgb(76,175,80);
+}
+
+a:hover
+{
+	color: rgb(60,140,64);
+}
+
+.login-div .btn
+{
+	min-width: 120px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.login-div img
+{
+	width:300px; 
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title-font
+{
+	font-family: title-font;
+}
+
+.content-div
+{
+	padding-top: 15px;
+	background-color: white;
+	box-shadow: 1px 1px 12px #555;
+	text-align: center;
+}
+
+.content-div-movie
+{
+	background-color: rgba(255, 255, 255, 0.7);
+	box-shadow: 1px 1px 12px #555;
+	text-align: center;
+}
+
+.content-div-movie p
+{
+	text-align: left;
+}
+
+.friend-div
+{
+	margin-right: 5px;
+	background-color: white;
+	box-shadow: 1px 1px 12px #555;
+	text-align: left;
+}
+
+.content-back
+{
+	background-color: rgb(235, 235, 235);
+	background-size: cover;
+}
+
+.user-div
+{
+	padding: 15px;
+}
+
+.cover-art
+{
+	padding: 15%;
+	background: url("./image/grid2.jpg") fixed;
+    background-size: cover;
+}
+
+.user-img
+{
+    border: 2px solid white;
+	box-shadow: 1px 1px 12px #555;
+	width:300px; 
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+	margin-top: -100px;
+}
+
+.user-img img
+{
+	width: 100%;
+  	height: 100%;
+  	display: block;
+}
+
+.user-info
+{
+	padding-top: 20px;
+}
+
+.shadow-boxing
+{
+	background-color: white;
+    padding: 10px;
+	box-shadow: 1px 1px 12px #555;
+}
+
+.news
+{
+	margin-top: 15px;
+	padding-top: 15px;
+	padding-right: 15px;
+	padding-left: 15px;
+	box-shadow: 1px 1px 12px #555;
+	text-align: left;
+}
+
+.content
+{
+	text-align: left;
+}
+
+.news-img img
+{
+	width: 100%; 
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.comments
+{
+	width: 100%;
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+.comment
+{
+	padding-top: 10px;
+	padding-bottom: 5px;
+	margin-top : 5px;
+    background-color: rgb(235, 235, 235);
+}
+
+.add-comment
+{
+	width: 100%;
+	margin: 10px 0;
+}
+
+.add-comment input
+{
+	width: 100%;
+}
+
+.add-comment button
+{
+	width: 100%;
+}
+
+.movie-info
+{
+	background-color: rgb(235, 235, 235);
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding: 15px;
+	box-shadow: 1px 1px 12px #555;
+}
+
+.movie-info img
+{
+	width: 100%; 
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.movie-content
+{
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.simple-resize-img
+{
+	width: 100%;
+}
+
+.tile-style
+{
+	display: inline-block;
+	margin: 10px;
+	box-shadow: 1px 1px 12px #555;
+	width: 150px;
+}
+
+.tile-style img
+{
+	width: 100%; 
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: rgb(76,175,80);
+}
+
+.popinRegister
+{
+	overflow: auto;
+	border-radius: 25px;
+	background-color: rgb(51, 51, 51);
+	display: none;
+	margin: 0 auto;
+	width: 450px;
+	padding: 15px;
+	text-align: center;
+	color: white;
+}
+
+.popinRegister hr
+{
+	border-color: white;
+}
+
+.popinModification
+{
+	overflow: auto;
+	border-radius: 25px;
+	background-color: rgb(51, 51, 51);
+	display: none;
+	margin: 0 auto;
+	width: 450px;
+	padding: 15px;
+	text-align: center;
+	color: white;
+}
+
+.popinModification hr
+{
+	border-color: white;
+}
+
+.popinForgot
+{
+	overflow: auto;
+	border-radius: 25px;
+	background-color: rgb(51, 51, 51);
+	display: none;
+	margin: 0 auto;
+	width: 450px;
+	padding: 15px;
+	text-align: center;
+	color: white;
+}
+
+.popinForgot hr
+{
+	border-color: white;
+}
+
+#marypopin-mask{
+	background-color: rgba(0,0,0,.5);
+}
